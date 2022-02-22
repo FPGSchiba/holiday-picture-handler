@@ -1,24 +1,19 @@
 import React from 'react';
-import logo from '../logo.png';
+import { Route, Routes } from 'react-router';
+import { Home } from './home/home';
+import { Login } from './login/login';
+import { NotFound } from './notFound';
+import PrivateRoute from './private-route';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path='/' element={<PrivateRoute />}>
+        <Route path='/home' element={<Home />} />
+      </Route>
+      <Route path='/login' element={<Login />} />
+      <Route path='*' element={<NotFound />} />
+    </Routes>
   );
 }
 
