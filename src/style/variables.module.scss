@@ -1,0 +1,28 @@
+/* COLORS */
+$color-primary-1: #D6A512;
+$color-primary-2: #323232;
+$color-secondary-1: #CF4D10;
+$color-secondary-2: #aaa;
+$color-error: #c2240c;
+$color-info: #1478c7;
+$color-divider: #D6A512;
+
+/* FONT-Colors */
+$color-text-primary: #f3f3f3;
+$color-text-secondary: #c7c7c7;
+$color-text-disabled: #5c5c5c;
+$color-text-black: #000000;
+
+:export {
+    primaryColor: $color-primary-1;
+    primaryColor2: $color-primary-2;
+    secondaryColor: $color-secondary-1;
+    secondaryColor2: $color-secondary-2;
+    errorColor: $color-error;
+    infoColor: $color-info;
+    dividerColor: $color-divider;
+    primaryTextColor: $color-text-primary;
+    secondaryTextColor: $color-text-secondary;
+    disabledTextColor: $color-text-disabled;
+    blackTextColor: $color-text-black;
+}
